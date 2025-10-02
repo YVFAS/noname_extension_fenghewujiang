@@ -19,8 +19,8 @@ export default function(){
                 maxHp: 4,
                 hujia: 0,
                 skills: ["fh_zhaoguang_yizan","fh_zhaoguang_weita"],
-                img: "extension/缝合武将/image/character/fh_zhaoguang.jpg",
-                dieAudios: ["ext:缝合武将/audio/die/fh_zhaoguang.mp3"],
+                img: "image/character/dc_zhaotongzhaoguang.jpg",
+                dieAudios: ["zhaotongzhaoguang"],
             },
             "fh_zhaotong": {
                 sex: "male",
@@ -29,8 +29,8 @@ export default function(){
                 maxHp: 4,
                 hujia: 0,
                 skills: ["fh_zhaotong_yizan","fh_zhaotong_longyuan"],
-                img: "extension/缝合武将/image/character/fh_zhaotong.jpg",
-                dieAudios: ["ext:缝合武将/audio/die/fh_zhaotong.mp3"],
+                img: "image/character/dc_zhaotongzhaoguang.jpg",
+                dieAudios: ["zhaotongzhaoguang"],
             },
         },
         translate: {
@@ -49,7 +49,7 @@ export default function(){
     skill: {
         skill: {
             "fh_zhaoguang_yizan": {
-                audio: "ext:缝合武将/audio/skill:2",
+                audio: "yizan_respond_shan",
                 enable: ["chooseToUse","chooseToRespond"],
                 unique: true,
                 forceunique: true,
@@ -142,7 +142,7 @@ export default function(){
                 "_priority": 0,
             },
             "fh_zhaoguang_weita": {
-                audio: "ext:缝合武将/audio/skill:2",
+                audio: "dcqingren",
                 trigger: {
                     global: ["loseAfter","loseAsyncAfter"],
                 },
@@ -195,7 +195,7 @@ export default function(){
                 "_priority": 0,
             },
             "fh_zhaotong_yizan": {
-                audio: "ext:缝合武将/audio/skill:2",
+                audio: "yizan_respond_shan",
                 enable: ["chooseToUse","chooseToRespond"],
                 unique: true,
                 forceunique: true,
@@ -318,7 +318,7 @@ export default function(){
                 "_priority": 0,
             },
             "fh_zhaotong_longyuan": {
-                audio: "ext:缝合武将/audio/skill:2",
+                audio: "xinfu_longyuan",
                 trigger: {
                     target: ["useCardToTargeted"],
                 },
